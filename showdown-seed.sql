@@ -9,6 +9,14 @@ VALUES ('testuser',
         'joel@joelburton.com',
         'tamu',
         FALSE),
+VALUES ('testuser2',
+        '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q',
+        'Test2',
+        'User2',
+        'male',
+        'joel2@joelburton.com',
+        'tamu',
+        FALSE),
        ('testadmin',
         '$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q',
         'Test',
@@ -27,10 +35,16 @@ VALUES ('tamu', 'Texas A&M University', 'College Station', 'Texas'),
 
 -- competitions, school_handle, user_handle
 
-INSERT INTO competitions (competition, school_handle)
-VALUES ('football', 'tamu'),
-       ('soccer', 'tamu'),
-       ('basketball', 'tamu'),
+INSERT INTO competitions (competition, school_handle, username)
+-- VALUES ('football', 'tamu'),
+--        ('soccer', 'tamu'),
+--        ('basketball', 'tamu'),
+--        ('football', 'uh'),
+--        ('soccer', 'uh'),
+--        ('basketball', 'uh');
+VALUES ('football', 'tamu', 'testuser2'),
+       ('soccer', 'tamu', 'testuser'),
+       ('basketball', 'tamu', 'testadmin'),
        ('football', 'uh'),
        ('soccer', 'uh'),
        ('basketball', 'uh');
