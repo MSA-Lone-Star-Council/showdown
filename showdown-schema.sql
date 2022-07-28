@@ -25,10 +25,6 @@ CREATE TABLE users (
 CREATE TABLE competitions (
   id SERIAL PRIMARY KEY,
   competition TEXT NOT NULL,
-  CONSTRAINT fk_school
-    FOREIGN KEY(handle) 
-	    REFERENCES schools(handle),
-  CONSTRAINT fk_user
-    FOREIGN KEY(username) 
-	    REFERENCES users(username) 
+  school_handle TEXT NOT NULL references schools(handle), 
+  user_handle TEXT NOT NULL references users(username) 
 );
