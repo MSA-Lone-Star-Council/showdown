@@ -25,6 +25,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.use("/schools", schoolsRoutes);
 app.use("/users", usersRoutes);
+app.use("/", usersRoutes);
 
 
 /** Handle 404 errors -- this matches everything */
