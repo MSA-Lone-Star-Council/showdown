@@ -67,7 +67,7 @@ class School {
     /** Given a school handle, return data about the school.
    *
    * Returns { school_handle, school_name, city, state, logoUrl, facebookUrl, instagramUrl, competitions }
-   *   where competitions is [{ id, title, salary, equity }, ...]
+   *   where competitions is [{ id, competition, description, school_handle, username }, ...]
    *
    * Throws NotFoundError if not found.
    **/

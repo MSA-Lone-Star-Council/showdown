@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.school.com/schoolNew.schema.json",
+  "type": "object",
+  "properties": {
+    "school_handle": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10
+    },
+    "school_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "logoUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "facebook_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "instagram_url": {
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "school_handle",
+    "school_name",
+    "city",
+    "state"
+  ]
+}
