@@ -1,6 +1,6 @@
 "use strict";
 
-/** Express app for jobly. */
+/** Express app for Showdown. */
 
 const express = require("express");
 const cors = require("cors");
@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
 app.use("/auth", authRoutes);
 app.use("/schools", schoolsRoutes);
 app.use("/users", usersRoutes);
-// app.use("/", usersRoutes);
+app.use("/", usersRoutes);
 
 
 /** Handle 404 errors -- this matches everything */

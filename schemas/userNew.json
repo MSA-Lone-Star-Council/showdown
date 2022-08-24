@@ -23,33 +23,22 @@
       "minLength": 1,
       "maxLength": 30
     },
-    "gender": {
-      "type": "string"
-    },
     "email": {
       "type": "string",
       "minLength": 6,
       "maxLength": 60,
       "format": "email"
     },
-    "school": {
-      "type": "string"
-    },
     "isAdmin": {
-      "type": "boolean"
-    },
-    "paid": {
       "type": "boolean"
     }
   },
   "additionalProperties": false,
   "required": [
     "username",
-    "password",
     "firstName",
     "lastName",
-    "gender",
-    "email",
-    "school"
+    "password",
+    "email"
   ]
 }
