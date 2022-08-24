@@ -17,6 +17,11 @@ https://www.youtube.com/watch?v=Wm7WoLFNXMk
 
 <details>
 <summary>PostgreSQL</summary>
+For Mac users:
+https://www.youtube.com/watch?v=eozE4lM0MRE
+
+For Windows users:
+https://www.youtube.com/watch?v=Xsl9qQ02Cwc
 
 </details>
 
