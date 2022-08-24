@@ -1,1 +1,1 @@
-# pern-showdown
+# showdown
