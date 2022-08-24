@@ -4,9 +4,19 @@
 The web application for MSA Showdown, hosted by MSA Lone Star Council.
 
 ## Installation
-To install and run, ensure you have the NPM package manager, and PostgreSQL installed.
+To install and run, ensure you have the Node.js to use the NPM package manager, and PostgreSQL installed.
 <details>
-<summary>NPM</summary>
+<summary>Node.js</summary>
+For Mac users:
+https://www.youtube.com/watch?v=DeCTDksI4EE
+
+For Windows users:
+https://www.youtube.com/watch?v=Wm7WoLFNXMk
+
+</details>
+
+<details>
+<summary>PostgreSQL</summary>
 
 </details>
 
