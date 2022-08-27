@@ -87,7 +87,7 @@ class School {
   
     const school = schoolRes.rows[0];
   
-    if (!school) throw new NotFoundError(`No company: ${school_handle}`);
+    if (!school) throw new NotFoundError(`No school: ${school_handle}`);
   
     const competitionsRes = await db.query(
             `SELECT competition

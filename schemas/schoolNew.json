@@ -24,15 +24,13 @@
       "format": "uri"
     },
     "facebook_url": {
-      "type": "string",
-      "format": "uri"
+      "type": "string"
     },
     "instagram_url": {
-      "type": "string",
-      "format": "uri"
+      "type": "string"
     }
   },
-  "additionalProperties": false,
+  "additionalProperties": true,
   "required": [
     "school_handle",
     "school_name",
