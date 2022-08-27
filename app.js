@@ -23,7 +23,7 @@ app.use(authenticateJWT);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("frontend/build"));
+  app.use(express.static("client/build"));
 }
 
 app.use("/auth", authRoutes);
