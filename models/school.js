@@ -64,7 +64,7 @@ class School {
     return schoolsRes.rows;
   }
 
-    /** Given a school handle, return data about the school.
+  /** Given a school handle, return data about the school.
    *
    * Returns { school_handle, school_name, city, state, logoUrl, facebookUrl, instagramUrl, competitions }
    *   where competitions is [{ id, competition, description, school_handle, username }, ...]
@@ -110,6 +110,24 @@ class School {
     school.users = usersRes.rows;
   
     return school;
+  }
+
+  /** Delete given school from database; returns undefined.
+   * 
+   * Throws NotFoundError if school not found.
+   */
+   static async remove(school_handle) {
+    const schoolRes = await db.query(
+            `DELETE
+            FROM schools
+            WHERE school_handle = $1
+            RETURNING school_handle`,
+            [school_handle],
+    );
+
+    const school = schoolRes.rows[0];
+
+    if (!school) throw new NotFoundError(`No school: ${school_handle}`);
   }
 }
 
